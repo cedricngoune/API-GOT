@@ -6,7 +6,7 @@ import { Container, P } from "./characterStyle"
 import { css } from "@emotion/react"
 import { CardContainer, H2 } from "../books/bookStyle"
 import Card from "@mui/material/Card"
-import { Button, CardHeader } from "@mui/material"
+import { CardHeader } from "@mui/material"
 import { CardContent } from "@mui/material"
 import { CardActions } from "@mui/material"
 

@@ -8,8 +8,6 @@ import Card from "@mui/material/Card"
 import { Button, CardHeader } from "@mui/material"
 import { CardContent } from "@mui/material"
 import { CardActions } from "@mui/material"
-import { AiOutlineHeart } from "react-icons/ai"
-import { AiFillHeart } from "react-icons/ai"
 import { FavouritesList } from "./favouritesBooks"
 
 const overide = css`

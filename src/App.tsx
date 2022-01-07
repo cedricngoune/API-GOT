@@ -1,11 +1,6 @@
-import React, { Fragment } from "react"
+import React from "react"
 import { Books } from "./components/books/book"
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useRoutes,
-} from "react-router-dom"
+import { BrowserRouter as Router, useRoutes } from "react-router-dom"
 import GlobalStyle from "./themes/global-style"
 import { Character } from "./components/characters/character"
 import { Home } from "./components/home/home"

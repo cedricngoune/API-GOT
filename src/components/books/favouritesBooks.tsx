@@ -1,5 +1,4 @@
 import React from "react"
-import { IBook } from "../../lib/interfaces/IBook"
 import { ContainerBook, H2, P } from "./bookStyle"
 
 export const FavouritesList = (props: {
