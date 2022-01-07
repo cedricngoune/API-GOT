@@ -10,13 +10,16 @@ Techniquement, le seul choix imposé est l’utilisation de React. Le choix d’
 
 Vu les contraintes de temps, aucun design particulier n’est attendu, juste que la solution soit raisonnablement fonctionnelle et conforme aux standards web.
 
-### `npm start`
+### `Launching app`
 
-to launch the app
+- npm install or yarn install
+- npm run start or yarn start
+  and that's all :)
 
 # Choix technologiques:
 
 - React pour notre IHM
 - Typescript pour le typage statique fort
 - Axios pour les requêtes externes
-- Jest pour nos suites de tests
+- Testing react libray pour les tests de composants
+- Jest pour la librarie de test

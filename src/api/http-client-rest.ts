@@ -4,12 +4,12 @@ const instance: AxiosInstance = axios.create({
   headers: {
     "content-type": "application/json",
   },
-  baseURL: "",
+  baseURL: `${process.env.REACT_APP_GOT_API}`,
   timeout: 15000,
 })
 const httpResponse = (response: AxiosResponse) => response.data
 
 export const httpClient = {
-  get: async (url: string) => instance.get(url).then(httpResponse),
+  get: async (url: string) => instance.get(`/${url}`).then(httpResponse),
   post: async (url: string) => instance.post(url).then(httpResponse),
 }
