@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useEffect } from "react"
-import { httpClient } from "../../api/http-client-rest"
+
 import { ICharacter } from "../../lib/interfaces/ICharacter"
 import BounceLoader from "react-spinners/ClipLoader"
 import { Container, P } from "./characterStyle"
@@ -9,6 +9,7 @@ import Card from "@mui/material/Card"
 import { CardHeader } from "@mui/material"
 import { CardContent } from "@mui/material"
 import { CardActions } from "@mui/material"
+import { instance } from "../../api/http-client-rest"
 
 const overide = css`
   display: block;
@@ -22,11 +23,9 @@ export const Character = () => {
   // Make an API call to the placeholder of characters
   const fetchCharacters = async () => {
     try {
-      await httpClient.get("characters").then((data: ICharacter[]) => {
-        setData(data)
-        console.log(data)
-        setLoading(false)
-      })
+      const { data } = await instance.get("characters")
+      setData(data)
+      setLoading(false)
     } catch (error: any) {
       console.log(error.message)
       setLoading(false)
