@@ -23,3 +23,10 @@ Vu les contraintes de temps, aucun design particulier n’est attendu, juste que
 - Axios pour les requêtes externes
 - Testing react libray pour les tests de composants
 - Jest pour la librarie de test
+
+# TODO
+
+❌ Créer une liste de favoris (les doublons ne seront pas acceptés)
+❌ supprimer les éléments mis en favoris
+❌ Afficher la liste des characters par livre
+❌ Rechercher un book

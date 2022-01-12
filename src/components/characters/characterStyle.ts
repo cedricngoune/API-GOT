@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { css } from "@emotion/react"
 
 export const Container = styled.div`
   font-family: Avenir;
@@ -20,4 +21,9 @@ export const H2 = styled.h2`
   color: yellow;
   font-family: Roboto;
   font-size: 2rem;
+`
+export const overide = css`
+  display: block;
+  margin: 0 auto;
+  border-color: red;
 `

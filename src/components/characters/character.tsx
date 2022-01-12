@@ -1,21 +1,15 @@
-import React, { Fragment, useState, useEffect } from "react"
-
+import { useState, useEffect } from "react"
 import { ICharacter } from "../../lib/interfaces/ICharacter"
 import BounceLoader from "react-spinners/ClipLoader"
-import { Container, P } from "./characterStyle"
-import { css } from "@emotion/react"
+import { Container, overide, P } from "./characterStyle"
 import { CardContainer, H2 } from "../books/bookStyle"
 import Card from "@mui/material/Card"
 import { CardHeader } from "@mui/material"
 import { CardContent } from "@mui/material"
 import { CardActions } from "@mui/material"
 import { instance } from "../../api/http-client-rest"
+import React from "react"
 
-const overide = css`
-  display: block;
-  margin: 0 auto;
-  border-color: red;
-`
 export const Character = () => {
   const [data, setData] = useState<ICharacter[]>([])
   const [loading, setLoading] = useState<boolean>(true)
@@ -36,7 +30,7 @@ export const Character = () => {
   }, [loading])
 
   return (
-    <>
+    <div>
       {loading ? (
         <BounceLoader color="#fff" css={overide} loading={loading} size={150} />
       ) : (
@@ -71,6 +65,6 @@ export const Character = () => {
           </CardContainer>
         </Container>
       )}
-    </>
+    </div>
   )
 }
