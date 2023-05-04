@@ -14,19 +14,7 @@ Vu les contraintes de temps, aucun design particulier n’est attendu, juste que
 
 - npm install or yarn install
 - npm run start or yarn start
-  and that's all :)
-
-# Choix technologiques:
-
-- React pour notre IHM
-- Typescript pour le typage statique fort
-- Axios pour les requêtes externes
-- Testing react libray pour les tests de composants
-- Jest pour la librarie de test
 
 # TODO
 
-❌ Créer une liste de favoris (les doublons ne seront pas acceptés)
-❌ supprimer les éléments mis en favoris
-❌ Afficher la liste des characters par livre
-❌ Rechercher un book
+implémenter la fonction de recherche d'un book. les composants Books et characters ont déja été crée , le composant SearchBook permet de rechercher un livre l'objectif est d'écrire le code de recherche le plus simple possible (pas de librairie externe autorisée)
